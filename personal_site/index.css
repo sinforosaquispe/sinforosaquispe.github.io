@@ -1,0 +1,343 @@
+html {
+    box-sizing: border-box;
+	}
+	*, *:before, *:after {
+	    box-sizing: inherit;
+	}
+
+	body {
+	    font-family: 'Muli', sans-serif;
+	    font-weight: lighter;
+	    padding: 0;
+	    margin: 0;
+	    background-color: #F5F5F5;
+	}
+
+	h1 {
+	    font-size: 30px;
+	    margin: 0;
+	    font-weight: normal;
+	    text-align: center;
+	    padding-bottom: 60px;
+	    color: #400160;
+
+	}
+
+	h2 {
+	    font-size: 25px;
+	    font-weight: lighter;
+	    text-align: center;
+	}
+
+	header h1 {
+	    font-size: 75px;
+	    font-family: 'Alex Brush', cursive;
+	    border-bottom: none;
+	    color: #ee1289;
+	}
+
+	header,
+	section,
+	footer {
+	    padding: 60px 120px
+	}
+
+	.loves,
+	footer {
+	    text-align: center;
+	}
+
+	p {
+	    font-size: 18px;
+	    line-height: 1.5;
+	    color: #848484;
+	    padding-bottom: 30px;
+	}
+
+	header {
+    margin-top: 70px;
+    position: relative;
+    display: block;
+    min-height: 500px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#image-container {
+    position: absolute;
+    top: -10px;
+    left: 0px;
+    bottom: -10px;
+    right: 0px;
+    background: url(images/hero.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    filter: blur(5px);
+    -webkit-filter: blur(6px) saturate(180%);
+    -moz-filter: blur(6px) saturate(180%);
+    -o-filter: blur(6px) saturate(180%);
+    -ms-filter: blur(6px) saturate(180%);
+    filter: blur(6px) saturate(180%);
+}
+
+header h1 {
+    position: absolute;
+    top: 140px;
+    font-size: 80px;
+    color: #ffffff;
+    left: 20px;
+    right: 20px;    
+}
+
+.divider {
+	width: 100px;
+	height: 4px;
+	top: 220px;
+	background: #FFFFFF;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	position: relative;
+	left: 46%;
+}
+
+header h2 {
+    position: absolute;
+    top: 290px;
+    font-size: 30px;
+    color: #ffffff;
+    left: 20px;
+    right: 20px;
+    padding-top: 4  0px;
+}
+
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+    border-top: thick solid #AA00FF;
+    -webkit-box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.2);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    0px 0px 1px 0px rgba(0, 0, 0, 0.2);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         0px 0px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+    display: inline-block; /* changes links from default inline element to add padding properly */
+    text-decoration: none; /* removes underline */
+    margin: -5px 20px 20px 20px; /* adds space around each link */
+    color: #808080;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: lighter;
+    padding: 25px;
+}
+
+nav a:hover {
+    background-color:#AA00FF;
+    color: #FFFFFF;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.resumen {
+    overflow: hidden;
+}
+
+.resumen h1 {
+	font-weight: 600;
+	border-bottom: 1.5px solid #ccc;
+}
+
+.resumen h3 {
+    padding-top: 30px;
+    color: #400160;
+    font-weight: 600;
+}
+
+.resumen p {
+    color: #848484;
+    font-weight: 100;
+}
+
+.detail {
+	margin-top: -30px;
+	font-style: italic;
+	opacity: .5;
+}
+
+#line-break {
+    width: 100px;
+    height: 1px;	
+    background: #ccc;
+}
+
+.fotos {
+    margin-top: -100px;
+}
+
+.fotos h1 {
+	border-top: 1.5px solid #ccc;
+	padding-top: 60px;	
+}
+
+.fotos img {
+    width: 286px;
+}
+
+footer {
+    margin-top: -100px;
+}
+
+footer h1 {
+	margin-top: 30px;
+	border-bottom: 1.5px solid #ccc;
+}
+
+footer img {
+    width: 50px;
+    margin: 60px 30px 0px 30px;
+}
+
+/* BOTTOM BAR - kubmo info
+-----------------------------------------*/
+
+#kubmo_info a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#kubmo_info p {
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+#kubmo_info {
+    background-color: #AA00FF;
+    width: 100%;
+    text-align: center;
+    padding-top: 32px;
+    height: 82px;
+}
+
+#kubmo_info a:hover {
+    color: #400160;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+
+/* MOBILE - responsive design
+-----------------------------------------*/
+
+@media only screen and (max-width: 1400px) {
+
+    .fotos img {
+        width: 260px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .fotos img {
+        width: 320px;
+    }
+}
+
+
+@media only screen and (max-width: 1000px) {
+    #container {
+        display: inline-block;
+    }
+
+    header,
+    section,
+    footer {
+        padding: 60px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    header h2 {
+        margin-top: 20px;
+    }
+
+    header h1 {
+        font-size: 100px;
+        margin-top: 0px;
+    }
+
+    .divider {
+        top:200px;
+        left: 43%;
+    }
+
+    nav a {
+        margin: -5px 5px 5px 5px ; /* adds space around each link */
+        font-size: 18px;
+        padding: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    header h1 {
+        font-size: 100px;
+        margin-top: -60px;
+    }
+
+    header h2 {
+        margin-top: 80px;
+    }
+
+    .divider {
+        top:280px;
+        left: 43%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    header,
+    section,
+    footer {
+        padding: 40px;
+    }
+
+    h1 {
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    header h2 {
+        margin-top: 80px;
+    }
+
+    header h1 {
+        font-size: 60px;
+        margin-top: -30px;
+    }
+
+    header {
+        margin-top: 40px;
+    }
+
+    .divider {
+        top:260px;
+        left: 36%;
+    }
+}
